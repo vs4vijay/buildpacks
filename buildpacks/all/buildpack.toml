@@ -1,0 +1,19 @@
+api = "0.2"
+
+[buildpack]
+id = "net.srijan.buildpacks.all"
+name = "Package for All BuildPacks"
+version = "0.0.1"
+
+[[order]]
+
+[[order.group]]
+id = "buildpacks/drupal"
+version = "0.0.1"
+
+[[order.group]]
+id = "buildpacks/nodejs"
+version = "0.0.1"
+
+[[stacks]]
+id = "net.srijan.stacks.vega"

@@ -2,9 +2,8 @@ api = "0.2"
 
 [buildpack]
 id = "net.srijan.buildpacks.drupal"
-name = "Drupal Buildpack"
+name = "Drupal BuildPack"
 version = "0.0.1"
-
 
 [[stacks]]
 id = "net.srijan.stacks.vega"

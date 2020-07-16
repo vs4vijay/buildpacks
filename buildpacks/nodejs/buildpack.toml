@@ -2,9 +2,8 @@ api = "0.2"
 
 [buildpack]
 id = "net.srijan.buildpacks.nodejs"
-name = "NodeJS Buildpack"
+name = "NodeJS BuildPack"
 version = "0.0.1"
-
 
 [[stacks]]
 id = "net.srijan.stacks.vega"

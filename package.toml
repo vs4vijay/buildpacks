@@ -1,0 +1,8 @@
+[buildpack]
+uri = "buildpacks/all"
+
+[[dependencies]]
+uri = "buildpacks/drupal"
+
+[[dependencies]]
+uri = "buildpacks/nodejs"
