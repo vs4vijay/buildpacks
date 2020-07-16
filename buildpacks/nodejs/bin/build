@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+echo "---> NodeJS Buildpack"
+
+layersdir=$1
+
+npm ci

@@ -1,0 +1,19 @@
+[[buildpacks]]
+uri = "buildpacks/drupal"
+
+[[buildpacks]]
+uri = "buildpacks/nodejs"
+
+[[order]]
+    [[order.group]]
+    id = "buildpacks/drupal"
+    version = "0.0.1"
+
+    [[order.group]]
+    id = "buildpacks/nodejs"
+    version = "0.0.1"
+
+[stack]
+id = "net.srijan.stacks.vega"
+run-image = "srijanlabs/php-cli:7.3-10"
+build-image = "srijanlabs/php-cli:7.3-10"
