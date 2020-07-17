@@ -1,28 +1,28 @@
 # Srijan BuildPacks
 
-Builder: Detect -> Build -> Push
+**Builder**: Checks specified buildpacks
 
-BuildPack: 
+**BuildPack**: Detect -> Build -> Push
 
-BuildPackages: Consists of multiple buildpacks
+**BuildPackages**: Package distribution of multiple buildpacks
 
-Stack: provides run-time and build-time environments
+**Stack**: provides run-time and build-time environments
 
 ---
 
 ## Create Builder
 ```
-pack create-builder viz-builder:bionic --config ./builder.toml
-```
-
-## Create App
-```
-pack build viz-app --builder my-builder:bionic
+pack create-builder viz-builder:latest --config builder.toml
 ```
 
 ## Create Package
 ```
-pack package-buildpack viz-buildpack --config ./package.toml
+pack package-buildpack viz-buildpack --config package.toml
+```
+
+## Create App
+```
+pack build viz-app --builder viz-builder:latest
 ```
 
 ---
@@ -36,6 +36,9 @@ pack suggest-stacks
 pack set-default-builder heroku/buildpacks:18
 
 pack package-buildpack my-buildpack.cnb --package-config ./package.toml --format file
+
+
+# Suggested Stacks
 
 Stack ID: heroku-18
 Description: The official Heroku stack based on Ubuntu 18.04
@@ -60,7 +63,5 @@ Description: A tiny Cloud Foundry stack based on Ubuntu 18.04, similar to distro
 Maintainer: Cloud Foundry
 Build Image: cloudfoundry/build:tiny-cnb
 Run Image: cloudfoundry/run:tiny-cnb
-
-
 
 ```

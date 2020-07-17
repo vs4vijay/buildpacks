@@ -8,9 +8,9 @@ version = "0.0.1"
 [[order]]
 
 [[order.group]]
-id = "buildpacks/drupal"
+id = "../buildpacks/drupal"
 version = "0.0.1"
 
 [[order.group]]
-id = "buildpacks/nodejs"
+id = "../buildpacks/nodejs"
 version = "0.0.1"
